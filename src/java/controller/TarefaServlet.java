@@ -44,8 +44,8 @@ public class TarefaServlet extends HttpServlet {
 
                 break;
             }
+            
             case "remover": {
-
                 for (String id : ids) {
                     int idInt = Integer.parseInt(id);
                     Tarefa t = new Tarefa();

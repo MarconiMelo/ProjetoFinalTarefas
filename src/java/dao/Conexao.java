@@ -23,7 +23,7 @@ public class Conexao {
 
         registrarDriver();
 
-        return DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "");
+        return DriverManager.getConnection("jdbc:mysql://localhost:3306?useTimezone=true&serverTimezone=UTC", "root", "");
     }
 
 }

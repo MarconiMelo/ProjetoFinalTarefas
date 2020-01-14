@@ -13,19 +13,24 @@
     </head>
     <body>
         <h1>Lista de Tarefas</h1>
-               <form method="POST" action="LoginServlet">
+        
+            <form method="POST" action="LoginServlet">
+             
             <p>
                 <label>E-mail: </label>
                 <input type="email" name="email"/>
             </p>
+            
             <p>
                 <label>Senha: </label>
                 <input type="password" name="senha"/>
             </p>
+            
             <input type="submit" value="Entrar"/>
         </form>
         <p>
             <a href="cadastro.jsp">Fazer cadastro</a>
         </p>
+        
     </body>
 </html>

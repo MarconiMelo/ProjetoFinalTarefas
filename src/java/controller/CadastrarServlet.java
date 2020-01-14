@@ -27,7 +27,7 @@ public class CadastrarServlet extends HttpServlet {
         Usuario u = UsuarioDAO.buscarPorEmail(email);
         
         if(u != null) {
-            request.setAttribute("erro", "Email jรก cadastrado. Tente outro email");
+            request.setAttribute("erro", "Email não cadastrado. Tente outro email");
             request.getRequestDispatcher("cadastro.jsp").forward(request, response);
         } else {
             u = new Usuario();
